@@ -1,0 +1,19 @@
+
+#main-container {
+    display: flex;
+    margin: 75px;
+
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: blue;
+}
+
+#content-container {
+    text-align: center;
+    background-color: grey;
+}
+
+.text {
+    color: white;
+}

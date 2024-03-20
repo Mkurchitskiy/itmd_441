@@ -1,0 +1,65 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0; 
+}
+
+body {
+    font-family: 'Alice', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #5680E9, #8860D0), linear-gradient(-45deg, #5AB9EA, #C1C8E4);
+    color: white;
+    height: 100vh;
+    background-size: 500% 500%;
+    animation: GradientAnimate 15s ease infinite;
+}
+
+@keyframes GradientAnimate {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+#main-container {
+    border: 7px solid #C1C8E4;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 30px;
+}
+
+#heading h3 {
+    font-size: 20px;
+}
+
+#title h1 {
+    font-size: 40px;
+    padding: 15px;
+}
+
+#inputs label {
+    font-size: 20px; 
+    width: 170px; 
+    margin-right: 10px;
+    text-align: right;
+}
+
+#inputs input {
+    font-size: 20px; 
+}
+
+#inputs div {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center; 
+    margin-bottom: 10px; 
+}
+
+@media only screen and (min-width: 768px) {
+    
+} 

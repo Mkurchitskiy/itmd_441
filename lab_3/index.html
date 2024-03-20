@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Lab 3 - Simple Tip Calculator">
     <meta name="author" content="Max Kurchitskiy">
-    <title>Document</title>
+    <title>Simple Tip Calculator</title>
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
   </head>
   <body>
     <main>
-      <div id="main-contioner">
+      <div id="main-container">
         <div id="heading">
           <h3>ITMD 441 - Lab 3 - Max Kurchitskiy</h3>
         </div>
@@ -19,27 +19,14 @@
           <h1>Tip Calculator</h1>
         </div>
         <div id="inputs">
-          <div id="bill-total"></div>
+          <div id="bill-total">
             <label for="bill-total">Bill Total:</label>
             <input type="text" pattern="\d*" name="bill-total">
           </div>
           <div id="tip-slider">
             <label for="tip-slider">Tip:</label>
-            <input type="range" name="tip-slider" min="0" max="100" step="1" list="tip-slider-markers">
+            <input type="range" name="tip-slider" min="0" max="100" step="1">
           </div>
-          <!-- 
-          <datalist id="tip-slider-markers">
-            <option value="0"></option>
-            <option value="10"></option>
-            <option value="20"></option>
-            <option value="30"></option>
-            <option value="50"></option>
-            <option value="60"></option>
-            <option value="70"></option>
-            <option value="80"></option>
-            <option value="90"></option>
-            <option value="100"></option>
-          </datalist> -->
           <div id="tip-percentage">
             <label for="tip-percentage">Tip Percentage:</label>
             <input type="text" pattern="\d*" name="tip-percentage">

@@ -34,7 +34,7 @@ body {
 }
 
 #heading h3 {
-    font-size: 20px;
+    font-size: 15px;
 }
 
 #title h1 {
@@ -43,23 +43,30 @@ body {
 }
 
 #inputs label {
-    font-size: 20px; 
-    width: 170px; 
-    margin-right: 10px;
-    text-align: right;
+    display: block;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
-#inputs input {
-    font-size: 20px; 
-}
-
-#inputs div {
-    display: flex;
-    justify-content: flex-start; 
-    align-items: center; 
-    margin-bottom: 10px; 
+#input input[type="text"], input[type="range"] {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 @media only screen and (min-width: 768px) {
-    
+    #inputs label {
+        width: 170px; 
+        margin-right: 10px;
+        text-align: right;
+    }
+
+    #inputs div {
+        display: flex;
+        justify-content: flex-start; 
+        align-items: center; 
+        margin-bottom: 10px; 
+    }
 } 

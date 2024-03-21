@@ -14,7 +14,7 @@ body {
     background: linear-gradient(45deg, #5680E9, #8860D0), linear-gradient(-45deg, #5AB9EA, #C1C8E4);
     color: white;
     height: 100vh;
-    background-size: 500% 500%;
+    background-size: 300% 300%;
     animation: GradientAnimate 15s ease infinite;
 }
 
@@ -50,15 +50,15 @@ body {
     margin-bottom: 5px;
 }
 
-#input input[type="text"], input[type="range"] {
+#inputs input[type="text"], input[type="range"] {
     display: block;
-    width: 100%;
-    box-sizing: border-box;
+    width: 100%; 
+    box-sizing: border-box; 
 }
 
 @media only screen and (min-width: 768px) {
     #inputs label {
-        width: 170px; 
+        width: 200px; 
         margin-right: 10px;
         text-align: right;
     }

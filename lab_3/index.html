@@ -18,7 +18,7 @@
         <div id="title">
           <h1>Tip Calculator</h1>
         </div>
-        <div id="inputs">
+        <form id="inputs">
           <div id="bill-total">
             <label for="bill-total">Bill Total:</label>
             <input type="text" pattern="\d*" name="bill-total">
@@ -29,15 +29,15 @@
           </div>
           <div id="tip-percentage">
             <label for="tip-percentage">Tip Percentage:</label>
-            <input type="text" pattern="\d*" name="tip-percentage">
+            <input type="text" pattern="\d*" name="tip-percentage" disabled>
           </div>
           <div id="tip-amount">
             <label for="tip-amount">Tip Amount:</label>
-            <input type="text" pattern="\d*" name="tip-amount">
+            <input type="text" pattern="\d*" name="tip-amount" disabled>
           </div>
           <div id="total-bill-w-tip">
             <label for="total-bill-w-tip">Total Bill With Tip:</label>
-            <input type="text" pattern="\d*" name="total-bill-w-tip">
+            <input type="text" pattern="\d*" name="total-bill-w-tip" disabled>
           </div>
         </div>
       </div>

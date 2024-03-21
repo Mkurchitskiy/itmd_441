@@ -11,17 +11,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(45deg, #5680E9, #8860D0), linear-gradient(-45deg, #5AB9EA, #C1C8E4);
+    background: linear-gradient(45deg, #5680E9, #8860D0, #5AB9EA, #C1C8E4);
     color: white;
     height: 100vh;
-    background-size: 300% 300%;
-    animation: GradientAnimate 15s ease infinite;
+    background-size: 200% 200%;
+    animation: GradientWave 10s ease infinite;
 }
 
-@keyframes GradientAnimate {
-    0% {background-position: 0% 50%;}
-    50% {background-position: 100% 50%;}
-    100% {background-position: 0% 50%;}
+@keyframes GradientWave {
+    0% {background-position: 100% 50%;}
+    50% {background-position: 0% 50%;}
+    100% {background-position: 100% 50%;}
 }
 
 #main-container {
@@ -29,17 +29,18 @@ body {
     border-radius: 20px;
     display: flex;
     flex-direction: column; 
-    align-items: center;
     padding: 30px;
 }
 
 #heading h3 {
     font-size: 15px;
+    text-align: center;
 }
 
 #title h1 {
     font-size: 40px;
     padding: 15px;
+    text-align: center;
 }
 
 #inputs label {
@@ -50,10 +51,14 @@ body {
     margin-bottom: 5px;
 }
 
-#inputs input[type="text"], input[type="range"] {
+
+#inputs input[type="text"], #inputs input[type="range"] {
     display: block;
     width: 100%; 
     box-sizing: border-box; 
+    margin: 0 auto;
+    align-items: center;
+
 }
 
 @media only screen and (min-width: 768px) {

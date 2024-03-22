@@ -21,25 +21,25 @@
         <form id="inputs">
           <div id="bill-total">
             <label for="bill-total">Bill Total:</label>
-            <input type="text" pattern="\d*" name="bill-total">
+            <input type="text" pattern="\d*" id="bill-total" name="bill-total">
           </div>
           <div id="tip-slider">
             <label for="tip-slider">Tip:</label>
-            <input type="range" name="tip-slider" value="50" min="0" max="100" step="1">
+            <input type="range" id="tip-slider" name="tip-slider" value="50" min="0" max="100" step="1">
           </div>
           <div id="tip-percentage">
             <label for="tip-percentage">Tip Percentage:</label>
-            <input type="text" pattern="\d*" name="tip-percentage" value="0" disabled>
+            <input type="text" pattern="\d*" id="tip-percentage" name="tip-percentage" value="0" disabled>
           </div>
           <div id="tip-amount">
             <label for="tip-amount">Tip Amount:</label>
-            <input type="text" pattern="\d*" name="tip-amount" value="0" disabled>
+            <input type="text" pattern="\d*" id="tip-amount" name="tip-amount" value="0" disabled>
           </div>
           <div id="total-bill-w-tip">
             <label for="total-bill-w-tip">Total Bill With Tip:</label>
-            <input type="text" pattern="\d*" name="total-bill-w-tip" value="0" disabled>
+            <input type="text" pattern="\d*" id='total-bill-w-tip' name="total-bill-w-tip" value="0" disabled>
           </div>
-        </div>
+        </form>
       </div>
     </main>
     <script src="js/index.js"></script>

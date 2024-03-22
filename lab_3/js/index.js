@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const tipAmountDisplay = document.querySelector('input[name="tip-amount"]');
     const totalBillDisplay = document.querySelector('input[name="total-bill-w-tip"]');
 
+    // Takes bill input and make sure it does not contain any letters 
     function validateBillTotal(input) {
         if (/[^0-9.]/.test(input.value)) {
             alert("Please enter numbers only.");
@@ -14,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Get tip from slider and log it into tip percentage field
+    // Calcutates the tip amount and total will with tip and display it accordingly
     function calculate() {
         const billTotal = parseFloat(billTotalInput.value) || 0;
         const tipPercentage = parseInt(tipSlider.value, 10) || 0;
@@ -32,7 +33,8 @@ document.addEventListener('DOMContentLoaded', function() {
         validateBillTotal(this);
         calculate();
     });
-
+    
+    // Get Tip percentage from slider and call calculate function
     tipSlider.addEventListener('input', function(){
         calculate();
     });
